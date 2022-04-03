@@ -12,17 +12,48 @@
 }
 /*nav*/
 nav {
-    display: flex;
     background-color: rgb(110, 15, 85);
 }
 /*photo profile*/
 nav .moi {
     width: 10%;
     border-radius: 50%;
+    background-size: cover;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/*menu cacher*/
+nav ul {
+    display: none;
 }
 /*menu burger*/
-nav .burger {
-    
+nav a .burger {
+    display: flex;
+    text-align: center;
 }
-
+/*présentation*/
+header h1 {
+    font-size: 2rem;
+    color: var(--white);
+}
+header h2 {
+    font-size: 0.9rem;
+    color: var(--white);
+}
+/*hauteur fond du header*/
+header div {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;                                      /*align-items: center;  */
+}
+header .fond-header {
+    background: url(../images/pexels-markus-spiske-177598.png)  no-repeat;
+    background-size: cover;
+}
+/*main A propos de moi*/
+main section h1 {
+    text-align: center;
+}
 
