@@ -53,7 +53,92 @@ header .fond-header {
     background-size: cover;
 }
 /*main A propos de moi*/
-main section h1 {
+main section {
+    margin-top: 25px;           /*espace titre et header 25px*/
+}
+main section h1,div {
+    text-align: center;
+    font-size: 1.2rem;
+}
+/*texte A propo de moi*/
+main section p {
+    font-size: 1rem;
+    margin: 20px 20px;
+    text-align: justify;
+}
+/*titre actuellement*/
+main div h2 {
+    font-size: 1.2rem;
+}
+/*lien internet "ici"*/
+main div a {
+    color: var(--black);
+    text-decoration: none;
+}
+/*titre des compétence*/
+main section h3 {
+    font-size: 0.8rem;
     text-align: center;
 }
-
+/*dessin des traits de compétences*/
+main section .php {
+    background: linear-gradient(to right, black 35%, gray 35% 100%);
+    color: var(--white);
+}
+main section .sql {
+    background: linear-gradient(to right, black 15%, gray 15% 100%);
+    color: var(--white);
+}
+main section .symfony {
+    background: linear-gradient(to right, black 40%, gray 40% 100%);
+    color: var(--white);
+}
+main section .angular {
+    background: linear-gradient(to right, black 20%, gray 20% 100%);
+    color: var(--white);
+}
+main section .html {
+    background: linear-gradient(to right, black 70%, gray 70% 100%);
+    color: var(--white);
+}
+main section .css {
+    background: linear-gradient(to right, black 65%, gray 65% 100%);
+    color: var(--white);
+}
+main section .javascript {
+    background: linear-gradient(to right, black 50%, gray 50% 100%);
+    color: var(--white);
+}
+main section .wordpress {
+    background: linear-gradient(to right, black 20%, gray 20% 100%);
+    color: var(--white);
+}
+main section .bootstrap {
+    background: linear-gradient(to right, black 75%, gray 75% 100%);
+    color: var(--white);
+}
+/*image de mon cv*/
+main section .mon-cv {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+/*lien pour télécharger cv*/
+main section a {
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    color: var(--black);
+    background-color: blue;/* voir pour un bouton */ 
+}
+/*footer*/
+footer h1 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+footer p {
+    font-size: 1rem;
+    margin: 20px 20px;
+    text-align: justify;
+}
