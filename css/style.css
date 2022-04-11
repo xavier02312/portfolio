@@ -25,6 +25,19 @@ nav .moi {
 /*menu cacher*/
 nav ul {
     display: none;
+    list-style-type: none;
+}
+/*menu ouverture*/
+.open {
+    display: block;
+    background-color: aqua; /*voir pour faire celule par celule*/
+}
+/*lien ancre*/
+nav li a {
+    color: var(--black);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 /*menu burger*/
 nav a .burger {
@@ -130,7 +143,7 @@ main section a {
     display: flex;
     justify-content: center;
     color: var(--black);
-    background-color: blue;/* voir pour un bouton */ 
+                            /* voir pour un bouton */ 
 }
 /*footer*/
 footer h1 {
