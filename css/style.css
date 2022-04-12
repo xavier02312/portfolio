@@ -13,6 +13,7 @@
 /*nav*/
 nav {
     background-color: rgb(110, 15, 85);
+    margin: 0px;
 }
 /*photo profile*/
 nav .moi {
@@ -26,11 +27,20 @@ nav .moi {
 nav ul {
     display: none;
     list-style-type: none;
+    padding: 0 32px;
+    margin-bottom: auto;
+}
+/*couleur du menu de nav*/
+nav ul li .centre {
+    background-color: rgb(235, 166, 235);
+    width: 40%;
+    border: 1px solid var(--black);
+    border-radius: 20px;
 }
 /*menu ouverture*/
 .open {
-    display: block;
-    background-color: aqua; /*voir pour faire celule par celule*/
+    display: block; 
+    margin-bottom: 0;
 }
 /*lien ancre*/
 nav li a {
@@ -154,4 +164,14 @@ footer p {
     font-size: 1rem;
     margin: 20px 20px;
     text-align: justify;
+}
+/*formulaire*/
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+footer ul li a {
+    color: var(--black);
 }
