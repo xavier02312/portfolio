@@ -69,7 +69,7 @@ header div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;                                      /*align-items: center;  */
+    justify-content: center;                                     
 }
 header .fond-header {
     background: url(../images/pexels-markus-spiske-177598.png)  no-repeat;
@@ -109,7 +109,7 @@ main section .php {
     color: var(--white);
 }
 main section .sql {
-    background: linear-gradient(to right, black 15%, gray 15% 100%);
+    background: linear-gradient(to right, black 75%, gray 75% 100%);
     color: var(--white);
 }
 main section .symfony {
@@ -133,7 +133,7 @@ main section .javascript {
     color: var(--white);
 }
 main section .wordpress {
-    background: linear-gradient(to right, black 20%, gray 20% 100%);
+    background: linear-gradient(to right, black 50%, gray 50% 100%);
     color: var(--white);
 }
 main section .bootstrap {
@@ -145,33 +145,79 @@ main section .mon-cv {
     width: 90%;
     display: flex;
     align-items: center;
+    margin: 20px auto;
 }
 /*lien pour télécharger cv*/
 main section a {
     text-decoration: none;
     font-size: 1rem;
+    font-weight: bold;
     display: flex;
     justify-content: center;
-    color: var(--black);
-                            /* voir pour un bouton */ 
+    color: var(--white);
+    background-color: rgb(235, 166, 235);
+    width: 35%;
+    border-radius: 20px;
+    padding: 5px;
 }
 /*footer*/
 footer h1 {
     font-size: 1.2rem;
     text-align: center;
+    font-weight: bold;
 }
 footer p {
     font-size: 1rem;
     margin: 20px 20px;
     text-align: justify;
 }
-/*formulaire*/
-footer ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
+/* fond du formulaire*/
+footer .contact {
+    background: linear-gradient( to top,rgba(235, 166, 235,0.6)  ,rgba(110, 15, 85,0.6) 70% );
+    color: var(--white);
+    border-radius: 10px;
 }
+/*lien de communication*/
 footer ul li a {
     color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
 }
+/*bouton acceptation des données personnel*/
+footer .but {
+    margin: 20px 20px;
+}
+/*lien de communication*/
+footer div .adresse {
+    margin: 20px auto;
+}
+footer div .adresse ul {
+    padding: 0;
+    margin: auto;
+    list-style-type: none;
+}
+footer div .adresse li {
+    margin: 25px auto;
+}
+/*couleur linkedin*/
+footer div .adresse .bi-linkedin {
+    color: blue;
+}
+/*chevron pour monter en haut de page*/
+footer .chevron {
+    margin: 20px;
+}
+/*copyright*/
+footer .copy {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: var(--white);
+}
+/*fond du footer*/
+footer .fondufooter {
+    background-color: rgb(110, 15, 85);
+    margin: 0px;
+}
+
