@@ -1,0 +1,103 @@
+@media screen and (min-width: 1200px) {
+
+    /*menu de navigation*/
+    header nav ul  {
+        display: flex;
+    }
+    /*fond de navigation*/
+    header nav li .centre {
+        width: 100%;
+        gap: 10px;
+    }
+    /*menu burger disparu*/
+    nav a .burger {
+        display: none;
+    }
+    header .fond-header {
+        background: url(../images/pexels-markus-spiske-177598.png)  no-repeat;
+        background-size: cover;
+        padding: 300px;
+    }
+    /*titre h1*/
+    header h1 {
+        font-size: 5rem;
+    }
+    header h2 {
+        font-size: 2rem;
+    }
+    /*main à propo de moi*/
+    main section h1,div {
+        font-size: 3rem;
+    }
+    /*main en p*/
+    main section p {
+        font-size: 2.5rem;
+        margin: 40px 200px;
+    }
+    /*h2 actuellement*/
+    main div h2 {
+        font-size: 3rem;
+        margin: 30px;
+    }
+    /*lien de téléchargement*/
+    main div p, a {
+        font-size: 2.5rem;
+    }
+    /*h3 les compétences*/
+    main section h3 {
+        font-size: 2rem;
+    }
+    /*taille compétence + cv*/
+    section .taille {
+        width: 50%;
+        display: flex;
+        float: left;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 50px;     
+    }
+    main section .mon-cv {
+        width: 49%;
+        display: flex;
+        margin: 100px 0 40px;
+    }
+    main section a {
+        width: 10%;     
+    }
+    /*espace entre champs*/
+    main .espace {
+        margin: 200px auto;
+    }
+    /*footer formulaire*/
+    footer .container div {
+        width: 50%;
+    }
+    /*bouton de validation des termes*/
+    footer .container .but {
+        display: flex;
+        flex-direction: left;
+        width: 22px;
+        height: 20px;
+    }
+    /*titre contacter moi*/
+    footer .contact h1 {
+        font-size: 3rem;
+        text-align: left;
+        margin-left: 400px;
+    }
+    /*p en dessous de contacter moi*/
+    footer .contact p {
+        font-size: 2rem;
+    }
+    /*bouton d' envoyer*/
+    footer .btn {
+        display: flex;
+        flex-direction: left;
+        border-radius: 20%;
+        font-size: x-large;
+    }
+    /*fond du footer*/
+    footer .copy {
+        font-size: 2.5rem;
+    }         
+}
