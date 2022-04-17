@@ -1,4 +1,11 @@
 /**
+ * Chargement du DOM
+ */
+document.addEventListener("DOMContentLoaded", function() {
+    alert("Document ready!");
+});
+
+/**
  * 
  * 
  * Menu Burger
@@ -13,3 +20,13 @@ open.addEventListener("click", function(event) {
     event.preventDefault()
     ul.classList.toggle("open")
 });
+
+/**
+ * Formulaire
+ * champs Nom
+ * 
+ */
+
+
+    
+    
