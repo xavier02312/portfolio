@@ -9,6 +9,12 @@
     --white: white;
     --black: black;
 }
+/*message d'erreur por le formulaire*/
+.errors {
+    font-size: 0.85rem;
+    color: red;
+    display: none;
+}
 /*nav*/
 nav {
     background-color: rgb(110, 15, 85);
