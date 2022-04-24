@@ -1,6 +1,12 @@
 /**
  * Fonction
  * Formulaire
+ * 
+ * @param{string|int} value,id
+ * @param{int}min
+ * @return{boolean}
+ * @param{boolean} error
+ * 
  */
 //Défini si mon champ et vide ou pas
 const notEmpty = (value) => {
@@ -45,6 +51,13 @@ const isEmail = (value) => {
 //Longueur de chaîne de caractère
 const isLength = (value, min) => {
     return value.length >= min;
-}
+};
+//validation de numéro de téléphone
+const isPhone = (value) => {
+
+    //Vérifie des chiffres uniquement
+    const chiffre = /^0[1-6]\d{8}$/;
+    return chiffre.test(value);
+};
 
 

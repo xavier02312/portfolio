@@ -75,7 +75,6 @@
     /*bouton de validation des termes*/
     footer .container .but {
         display: flex;
-        flex-direction: left;
         width: 22px;
         height: 20px;
     }

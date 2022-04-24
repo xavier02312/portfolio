@@ -106,7 +106,10 @@
                 <p class="errors" id="lastnameError">Message d'erreur</p>
                 <p class="errors" id="firstnameError">Message d'erreur</p>
                 <p class="errors" id="emailError">Message d'erreur</p>
-  <!--accepte terme--><p class="errors" id="confirmPasswordError">Message d'erreur</p>
+                <p class="errors" id="phoneError">Message d'erreur</p>
+                <p class="errors" id="commentaireError">Message d'erreur</p>
+                <!--accepte terme-->
+                <p class="errors" id="invalidCheckError">Message d'erreur</p>
                                             <!--formulaire-->
                 <div class="container">     
                     <div class="row">
@@ -128,20 +131,20 @@
                         </div>
                         <div class="col-12">       <!--téléphone-->
                             <label for="phone">Téléphone*</label>
-                            <input type="tel" class="form-control form-control-sm" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">                            
+                            <input type="tel" class="form-control form-control-sm" id="phone" maxlength="10" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">                            
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">       <!--message-->
                             <label for="exampleFormControlTextarea1" class="form-label">Commentaire*</label>
-                            <textarea class="form-control form-control-sm" id="commentaire" rows="3"></textarea>                            
+                            <textarea class="form-control form-control-sm" id="commentaire" maxlength="250" rows="3"></textarea>                            
                             </label>                        
                         </div>
                     </div>
 
                                             <!-- Accepter les termes et les conditions-->
 
-                                <input class="form-check-input but" type="checkbox" value="" id="invalidCheck" required>
+                                <input class="form-check-input but" type="checkbox" value="" id="invalidCheck">
                            
                                 <label class="form-check-label" for="invalidCheck">
                                 <p>En soumettant ce formulaire, j'accepte que mes donner personelles soient utilisées

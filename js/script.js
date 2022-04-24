@@ -5,6 +5,10 @@ window.onload = function() {
     alert("Document ready!");
 }
 /**
+ * @param{boolean} response
+ */
+
+/**
  * 
  * 
  * Menu Burger
@@ -72,17 +76,48 @@ mail.addEventListener("input", () => {
 
 
 });
-//Le téléphone
-const telephone = document.querySelector("#phone");
+//Le téléphone //Affiche le message trop longtemps//
+const phone = document.querySelector("#phone");
 
 //Ecouteur d'événement
-telephone.addEventListener("input", () => {
+phone.addEventListener("input", () => {
 
     //Vérifie le champs
-    const response = notEmpty(telephone.value);
+    const response = notEmpty(phone.value);
 
     //Fonction d'erreur
-    
+    isError("Votre numéro de téléphone est invalide", response, "phone");
+
+    //Fonction numéro
+    if (response) {
+
+        const numPhone = isPhone(phone.value);
+        isError("Uniquement des chiffres !", numPhone, "phone");
+    }
 });
+//Le message textarea //limiter à 250 caractère à refaire
+const commentaire = document.querySelector("#commentaire");
+
+//Ecouteur d'événement
+commentaire.addEventListener("input", () => {
+
+    //Vérifie le champs
+    const response = notEmpty(commentaire.value);
+
+    //Fonction d'erreur
+    isError("Ne pas dépasser 250 carartère", response, "commentaire");
+
+});
+//Bouton accepter les conditions
+const invalidCheck = document.querySelector("#invalidCheck");
+
+//Ecouteur d'événement
+invalidCheck.addEventListener("input", () => {
     
+    //Vérifie le champs
+    const response = notEmpty(invalidCheck.value);
+
+    //Fonction d'erreur//A refaire mais à l'enver!!!!!
+    isError("Veuillez accepter les termes", response, "invalidCheck");
+});
     
