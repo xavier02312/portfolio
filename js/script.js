@@ -90,10 +90,10 @@ phone.addEventListener("input", () => {
 
     //Fonction numéro
     if (response) {
-
+      
         const numPhone = isPhone(phone.value);
-        isError("Uniquement des chiffres !", numPhone, "phone");
-    }
+        isError("Uniquement des chiffres !", numPhone, "phone");      
+    } 
 });
 //Le message textarea //limiter à 250 caractère à refaire
 const commentaire = document.querySelector("#commentaire");
@@ -114,10 +114,23 @@ const invalidCheck = document.querySelector("#invalidCheck");
 //Ecouteur d'événement
 invalidCheck.addEventListener("input", () => {
     
-    //Vérifie le champs
-    const response = notEmpty(invalidCheck.value);
+//Vérifie le champs
+const response = document.querySelector("#invalidCheck");
 
-    //Fonction d'erreur//A refaire mais à l'enver!!!!!
-    isError("Veuillez accepter les termes", response, "invalidCheck");
+const error = document.querySelector("#invalidCheck");
+
+    if (response) {
+        invalidCheck.style.border = "2px solid green";      /**bouton check reste vert */
+        error.style.display = "block";
+        
+    }
+    else {
+        error.inerText = "Veuillez accepter les conditions";
+        error.display = "block";
+        invalidCheck.style.border = "2px solid red";
+        console.log('salut');
+    } 
 });
+//Validiter du formulaire
+
     
