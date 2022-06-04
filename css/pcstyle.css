@@ -91,7 +91,6 @@
     /*bouton d' envoyer*/
     footer .btn {
         display: flex;
-        flex-direction: left;
         border-radius: 20%;
         font-size: x-large;
     }

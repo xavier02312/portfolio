@@ -50,7 +50,7 @@ const isEmail = (value) => {
 
 //Longueur de chaîne de caractère
 const isLength = (value, min) => {
-    return value.length >= min;
+    return value.length > min;
 };
 //validation de numéro de téléphone
 const isPhone = (value) => {

@@ -127,10 +127,15 @@ const error = document.querySelector("#invalidCheck");
     else {
         error.inerText = "Veuillez accepter les conditions";
         error.display = "block";
-        invalidCheck.style.border = "2px solid red";
-        console.log('salut');
+        invalidCheck.style.border = "2px solid red";      
     } 
 });
-//Validiter du formulaire
+//formulaire d'envoi
 
-    
+
+
+
+
+
+
+   
